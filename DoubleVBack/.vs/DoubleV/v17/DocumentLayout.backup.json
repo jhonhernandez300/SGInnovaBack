@@ -1,0 +1,112 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\sginnova\\back\\doublevback\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|solutionrelative:controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\sginnova\\back\\doublevback\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\sginnova\\back\\doublevback\\dtos\\tareaconusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|solutionrelative:dtos\\tareaconusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\sginnova\\back\\doublevback\\servicios\\tareaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|solutionrelative:servicios\\tareaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\sginnova\\back\\doublevback\\modelos\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA2E0E9-B9DA-4C4A-89F4-0FC93FF44E0C}|DoubleV.csproj|solutionrelative:modelos\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 755,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tarea.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\Modelos\\Tarea.cs",
+              "RelativeDocumentMoniker": "Modelos\\Tarea.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\Modelos\\Tarea.cs",
+              "RelativeToolTip": "Modelos\\Tarea.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T16:46:34.54Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TareasController.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\Controllers\\TareasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TareasController.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\Controllers\\TareasController.cs",
+              "RelativeToolTip": "Controllers\\TareasController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAGkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T16:54:33.513Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TareaService.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\Servicios\\TareaService.cs",
+              "RelativeDocumentMoniker": "Servicios\\TareaService.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\Servicios\\TareaService.cs",
+              "RelativeToolTip": "Servicios\\TareaService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T16:54:47.675Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAIEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T16:58:23.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TareaConUsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\DTOs\\TareaConUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\TareaConUsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\SGInnova\\Back\\DoubleVBack\\DTOs\\TareaConUsuarioDTO.cs",
+              "RelativeToolTip": "DTOs\\TareaConUsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T16:55:45.357Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
