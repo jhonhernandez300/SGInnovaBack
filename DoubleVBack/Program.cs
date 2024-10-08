@@ -40,6 +40,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<ITareaService, TareaService>();
 builder.Services.AddScoped<IRolService, RolService>();
+builder.Services.AddScoped<IProyectoService, ProyectoService>();
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -105,6 +106,7 @@ builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddAutoMapper(typeof(MappingTarea));
 builder.Services.AddAutoMapper(typeof(MappingUsuario));
+builder.Services.AddAutoMapper(typeof(MappingProyecto));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

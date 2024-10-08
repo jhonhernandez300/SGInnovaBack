@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Cors;
 using DoubleV.Helpers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DoubleV.Controllers
 {
@@ -102,7 +103,8 @@ namespace DoubleV.Controllers
             }
         }
 
-        [HttpGet("ObtenerTareasConUsuarios")]
+        [HttpGet("ObtenerTareasConUsuarios")]       
+        [AllowAnonymous]
         //[AuthorizeRoles("Administrador", "Supervisor", "Empleado")]
         public async Task<ActionResult<ApiResponse>> ObtenerTareasConUsuarios()
         {
