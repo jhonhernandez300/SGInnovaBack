@@ -58,30 +58,32 @@ namespace DoubleV.Servicios
                 return null;
             }
         }
-
-        // Método para crear un nuevo proyecto
-        public async Task<bool> CrearProyectoAsync(Proyecto proyecto)
+        
+        public async Task<int> CrearProyectoAsync(Proyecto proyecto)
         {
             try
             {
                 _context.Proyectos.Add(proyecto);
                 await _context.SaveChangesAsync();
-                return true;
+                return proyecto.ProyectoId;
+            }
+            catch (DbUpdateException dbEx)
+            {
+                Console.WriteLine("Error de base de datos: " + dbEx.Message);
+                if (dbEx.InnerException != null)
+                {
+                    Console.WriteLine("Detalle: " + dbEx.InnerException.Message);
+                }
+                // Devuelve -1 en caso de error
+                return -1;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al crear el proyecto: {ex.Message}");
-
-                if (ex.InnerException != null)
-                {
-                    Console.WriteLine($"Detalle: {ex.InnerException.Message}");
-                }
-
-                return false;
+                Console.WriteLine("Error general: " + ex.Message);
+                return -1;
             }
         }
-
-        // Método para actualizar un proyecto existente
+        
         public async Task<bool> ActualizarProyectoAsync(Proyecto proyecto)
         {
             try
@@ -102,8 +104,7 @@ namespace DoubleV.Servicios
                 return false;
             }
         }
-
-        // Método para eliminar un proyecto
+       
         public async Task<bool> EliminarProyectoAsync(int proyectoId)
         {
             try

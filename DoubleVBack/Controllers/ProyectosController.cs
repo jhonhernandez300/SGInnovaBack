@@ -33,6 +33,38 @@ namespace DoubleV.Controllers
             _configuration = configuration;
         }
 
+        [HttpPost("GuardarProyectoAsync")]
+        public async Task<ActionResult<ProyectoResponse>> GuardarProyectoAsync([FromBody] ProyectoSinIdDTO proyectoDto)
+        {
+            if (proyectoDto == null)
+            {
+                return BadRequest(new ApiResponse { Message = "Los datos del proyecto son requeridos.", Data = null });
+            }
+
+            try
+            {    
+                var proyecto = _mapper.Map<Proyecto>(proyectoDto);
+                
+                int nuevoProyectoId = await _proyectoService.CrearProyectoAsync(proyecto);
+
+                // Si se creó correctamente, el ID será mayor que 0
+                if (nuevoProyectoId > 0)
+                {
+                    return Ok(new ApiResponse
+                    {
+                        Message = "Usuario creado exitosamente.",
+                        Data = nuevoProyectoId
+                    });
+                }
+                return BadRequest(new ApiResponse { Message = "Fallo al crear el proyecto", Data = null });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en GuardarProyectoAsync: {ex.Message}");
+                return StatusCode(500, new ProyectoResponse { Message = "Error interno del servidor" });
+            }
+        }
+
         [HttpGet("ObtenerTodosLosProyectosAsync")]
         //[AuthorizeRoles("Administrador")] 
         public async Task<ActionResult<ProyectoResponse>> ObtenerTodosLosProyectosAsync()

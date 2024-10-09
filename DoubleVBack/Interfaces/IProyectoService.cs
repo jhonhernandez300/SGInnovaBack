@@ -6,7 +6,7 @@ namespace DoubleV.Interfaces
     {
         Task<List<Proyecto>> ObtenerTodosAsync();
         Task<Proyecto?> ObtenerProyectoPorIdAsync(int proyectoId);
-        Task<bool> CrearProyectoAsync(Proyecto proyecto);
+        Task<int> CrearProyectoAsync(Proyecto proyecto);
         Task<bool> ActualizarProyectoAsync(Proyecto proyecto);
         Task<bool> EliminarProyectoAsync(int proyectoId);
     }

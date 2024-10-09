@@ -17,6 +17,32 @@
   },
   {
     "ContainingType": "DoubleV.Controllers.ProyectosController",
+    "Method": "GuardarProyectoAsync",
+    "RelativePath": "api/Proyectos/GuardarProyectoAsync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "proyectoDto",
+        "Type": "DoubleV.DTOs.ProyectoSinIdDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DoubleV.DTOs.ProyectoResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DoubleV.Controllers.ProyectosController",
     "Method": "ObtenerTodosLosProyectosAsync",
     "RelativePath": "api/Proyectos/ObtenerTodosLosProyectosAsync",
     "HttpMethod": "GET",
