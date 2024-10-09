@@ -48,13 +48,38 @@ namespace DoubleV.Controllers
 
                 // Mapear a DTO si es necesario
                 var proyectosDto = _mapper.Map<List<ProyectoDTO>>(proyectos);
-
-                return Ok(new ProyectoResponse { Proyectos = proyectosDto });
+                                
+                return Ok(new ProyectoResponse
+                {
+                    Message = "Proyectos obtenidos exitosamente.",
+                    Proyectos = proyectosDto
+                });
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error en ObtenerTodosLosProyectosAsync: {ex.Message}");
                 return StatusCode(500, new ProyectoResponse { Message = "Error interno del servidor" });
+            }
+        }
+
+        [HttpDelete("BorrarProyectoAsync/{proyectoId}")]
+        public async Task<IActionResult> BorrarProyectoAsync(int proyectoId)
+        {
+            try
+            {
+                bool resultado = await _proyectoService.EliminarProyectoAsync(proyectoId);
+
+                if (!resultado)
+                {
+                    return NotFound(new { Message = "Proyecto no encontrado" });
+                }
+
+                return Ok(new { Message = "Proyecto borrado exitosamente" });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al borrar el proyecto: {ex.Message}");
+                return StatusCode(500, new { Message = "Error interno del servidor" });
             }
         }
     }

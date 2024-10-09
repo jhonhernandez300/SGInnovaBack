@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "DoubleV.Controllers.ProyectosController",
+    "Method": "BorrarProyectoAsync",
+    "RelativePath": "api/Proyectos/BorrarProyectoAsync/{proyectoId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "proyectoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DoubleV.Controllers.ProyectosController",
     "Method": "ObtenerTodosLosProyectosAsync",
     "RelativePath": "api/Proyectos/ObtenerTodosLosProyectosAsync",
     "HttpMethod": "GET",
