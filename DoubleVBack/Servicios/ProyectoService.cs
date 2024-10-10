@@ -41,8 +41,7 @@ namespace DoubleV.Servicios
         {
             try
             {
-                return await _context.Proyectos
-                    .Include(p => p.Tareas) // Incluye las tareas asociadas si es necesario
+                return await _context.Proyectos                    
                     .FirstOrDefaultAsync(p => p.ProyectoId == proyectoId);
             }
             catch (Exception ex)

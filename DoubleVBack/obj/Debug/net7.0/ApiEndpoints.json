@@ -1,6 +1,37 @@
 [
   {
     "ContainingType": "DoubleV.Controllers.ProyectosController",
+    "Method": "ActualizarProyecto",
+    "RelativePath": "api/Proyectos/ActualizarProyecto/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "proyectoDTO",
+        "Type": "DoubleV.DTOs.ProyectoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DoubleV.DTOs.ApiResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DoubleV.Controllers.ProyectosController",
     "Method": "BorrarProyectoAsync",
     "RelativePath": "api/Proyectos/BorrarProyectoAsync/{proyectoId}",
     "HttpMethod": "DELETE",

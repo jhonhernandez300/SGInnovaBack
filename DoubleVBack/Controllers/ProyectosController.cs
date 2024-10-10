@@ -33,6 +33,52 @@ namespace DoubleV.Controllers
             _configuration = configuration;
         }
 
+        [HttpPut("ActualizarProyecto/{id}")]
+        [AuthorizeRoles("Administrador")]
+        public async Task<ActionResult<ApiResponse>> ActualizarProyecto(int id, [FromBody] ProyectoDTO proyectoDTO)
+        {
+            if (id <= 0)
+            {
+                return BadRequest(new ApiResponse { Message = "El ID del proyecto es requerido.", Data = null });
+            }
+
+            if (proyectoDTO == null)
+            {
+                return BadRequest(new ApiResponse { Message = "Los datos del proyecto son requeridos.", Data = null });
+            }
+
+            try
+            {
+                var proyectoExistente = await _proyectoService.ObtenerProyectoPorIdAsync(id);
+                if (proyectoExistente == null)
+                {
+                    return NotFound(new ApiResponse { Message = "Proyecto no encontrado.", Data = null });
+                }
+
+                // Usar AutoMapper para mapear ProyectoDTO a Proyecto
+                _mapper.Map(proyectoDTO, proyectoExistente);
+
+                var resultado = await _proyectoService.ActualizarProyectoAsync(proyectoExistente);
+
+                if (resultado)
+                {
+                    return Ok(new ApiResponse
+                    {
+                        Message = "Proyecto actualizado exitosamente.",
+                        Data = null
+                    });
+                }
+
+                return BadRequest(new ApiResponse { Message = "Error al actualizar el proyecto.", Data = null });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ApiResponse { Message = "Error al actualizar el proyecto.", Error = ex.Message });
+            }
+        }
+
+
+
         [HttpPost("GuardarProyectoAsync")]
         public async Task<ActionResult<ProyectoResponse>> GuardarProyectoAsync([FromBody] ProyectoSinIdDTO proyectoDto)
         {
